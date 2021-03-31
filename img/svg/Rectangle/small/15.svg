@@ -1,6 +1,6 @@
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5" filter="url(#filter0_d)">
-<rect x="9.85254" y="4.35254" width="9" height="9" rx="1.125" transform="rotate(30 9.85254 4.35254)" fill="white"/>
+<g opacity="0.4" filter="url(#filter0_d)">
+<rect x="5.35254" y="8.85254" width="9" height="9" rx="1.125" transform="rotate(-30 5.35254 8.85254)" fill="white"/>
 </g>
 <defs>
 <filter id="filter0_d" x="0.763672" y="0.763672" width="29.471" height="29.471" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

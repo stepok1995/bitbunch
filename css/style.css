@@ -423,7 +423,7 @@ textarea {
   }
 
   .wraper{
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 }
 /*headers style start*/
@@ -513,12 +513,27 @@ opacity: 0.65;
 
 /*intro style start*/
 .intro{
-    min-height: 70vh;
+    width: 100%;
     background: url("../img/intro.jpg") no-repeat center;
     background-size: cover;
     padding-top: 260px;
  }
 
+ .gridWraper{
+     display: grid;
+     grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    }
+.gridLeftItem{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.gridRightItem{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    max-height: 600px;
+}
  .intro__title{
     font-weight: bold;
     font-size: 56px;
@@ -547,6 +562,159 @@ opacity: 0.65;
  .intro_button:hover, .intro_button:focus, .intro_button:active{
      background: #e47952;
  }
+/*style Rectangle animate*/ 
+.rectangle2{
+    transform: translateY(-1000%) rotate(45deg);
+    padding-left: 45%;
+}
+.rectangle2_animate{
+    transform: translateY(-50%) rotate(0);
+    padding-top: 0;
+    padding-left: 45%;
+    transition: 1.5s all linear;
+}
+ .rectangle1{
+    transform: translateX(-500%) rotate(83deg);
+     padding-left: 15%;
+ }
+ .rectangle1_animate{
+    transform: translateY(-45%) translateX(0) rotate(0);
+    padding-left: 15%;
+    transition: 1.5s all linear;
+}
+.rectangle3{
+    transform: translateY(-1000%);
+    padding-left: 85%;
+}
+.rectangle3_animate{
+    transform: translateY(-250%);
+    padding-left: 85%;
+    transition: 1.5s all linear;
+}
+.rectangle4{
+    transform: translateY(-130%) translateX(-500%) rotate(45deg);
+    padding-left: 53%;
+}
+.rectangle4_animate{
+    transform: translateY(-100%) translateX(0) rotate(0);
+    padding-left: 53%;
+    transition: 1.5s all linear;
+}
+.rectangle5{
+    transform: translateY(-2000%);
+    padding-left: 80%;
+}
+.rectangle5_animate{
+    transform: translateY(-680%);
+    padding-left: 80%;
+    transition: 1.5s all linear;
+}
+.rectangle6{
+    transform: translateY(-5000%);
+    padding-left: 50%;
+}
+.rectangle6_animate{
+    transform: translateY(-780%);
+    padding-left: 50%;
+    transition: 1.5s all linear;
+}
+.rectangle7{
+    transform: translateY(-3000%);
+    padding-left: 75%;
+}
+.rectangle7_animate{
+    transform: translateY(-1400%);
+    padding-left: 75%;
+    transition: 1.5s all linear;
+}
+.rectangle8{
+    transform: translateY(-3100%) translateX(-500%);
+    padding-left: 55%;
+}
+.rectangle8_animate{
+    transform: translateY(-3100%) translateX(0);
+    padding-left: 55%;
+    transition: 1.5s all linear;
+}
+.rectangle9{
+    transform: translateY(-350%) translateX(-1000%) rotate(270deg);
+    padding-left: 35%;
+}
+.rectangle9_animate{
+    transform: translateY(-970%) translateX(0) rotate(0);
+    padding-left: 35%;
+    transition: 2s all linear;
+}
+.rectangle10{
+    transform: translateY(-1750%) translateX(-1000%) rotate(270deg);
+    padding-left: 35%;
+}
+.rectangle10_animate{
+    transform: translateY(-1750%) translateX(0) rotate(0);
+    padding-left: 35%;
+    transition: 2s all linear;
+}
+.rectangle11{
+    transform: translateY(-1950%) translateX(-1000%) rotate(270deg);
+    padding-left: 45%;
+}
+.rectangle11_animate{
+    transform: translateY(-1950%) translateX(0) rotate(0);
+    padding-left: 45%;
+    transition: 2s all linear;
+}
+.rectangle12{
+    transform: translateY(-5100%);
+    padding-left: 60%;
+}
+.rectangle12_animate{
+    transform: translateY(-2100%) translateX(0) rotate(0);
+    padding-left: 60%;
+    transition: 2s all linear;
+}
+.rectangle13{
+    transform: translateY(-3350%) translateX(-1000%) rotate(270deg);
+    padding-left: 35%;
+}
+.rectangle13_animate{
+    transform: translateY(-1970%) translateX(0) rotate(0);
+    padding-left: 35%;
+    transition: 2s all linear;
+}
+.rectangle14{
+    transform: translateY(-3000%);
+    padding-left: 95%;
+}
+.rectangle14_animate{
+    transform: translateY(-2050%);
+    padding-left: 95%;
+    transition: 1.5s all linear;
+}
+.rectangle15{
+    transform: translateX(-5500%) translateX(-1000%) rotate(83deg);
+     padding-left: 15%;
+ }
+ .rectangle15_animate{
+    transform: translateY(-3745%) translateX(0) rotate(0);
+    padding-left: 15%;
+    transition: 1.5s all linear;
+}
+.rectangle16{
+    transform: translateY(-3000%) translateX(-1000%);
+    padding-left: 98%;
+}
+.rectangle16_animate{
+    transform: translateY(-2050%) translateX(0);
+    padding-left: 98%;
+    transition: 1.5s all linear;
+}
+ /*
+
+*/
+/*style Rectangle animate*/
+/*
+
+*/
 /*intro style end*/
 
 .line{
@@ -799,4 +967,9 @@ line-height: 21px;
     margin-top: 230px;
 }
 
+
 /*footer style end*/
+
+/*Media start*/
+
+/*Media end*/

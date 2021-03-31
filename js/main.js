@@ -9,3 +9,15 @@
          }
     }
 }());
+
+//Animate Rectangle
+(function (){
+    window.onload = () => {
+        for(let i=1; i<17 ; i++)
+        {
+        document.getElementById("rectangle" + i).className="rectangle" + i + "_animate";
+       }
+    }
+}
+()
+);
