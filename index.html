@@ -10,44 +10,58 @@
 <body>
     <header class="header">
         <div class="wraper">
-          
+           <div class="gridHeader">
+                    <div class="headerlogo">
                     <div class="header__wraper">
-                        <!--Вставили лого-->
-                        <div class="header__logo">
-                            <a href="/" class="header__logo-link">
-                            <img src="./img/svg/logo.svg" alt="Bitbunch" class="header__logo-pic">
-                            </a>
+                            <!--Вставили лого-->
+                            
+                                <div class="header__logo">
+                                    <a href="/" class="header__logo-link">
+                                    <img src="./img/svg/logo.svg" alt="Bitbunch" class="header__logo-pic">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <!--Запилили менбшку-->
-                        <nav class="header__nav">
-                            <ul class="header__list">
-                                <li class="header__item">
-                                    <a href="#" class="header__link">How it works</a>
-                                </li>
-                                <li class="header__item">   
-                                    <a href="#!" class="header__link">Pressroom</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="#!" class="header__link">Team</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="#!" class="header__link">FAQ</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="#!" class="header__link">Contact</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="#!" class="header__link">Sign in</a>
-                                </li>
-                                <li class="header__item">
-                                    <button type="submit" class="header_button">
-                                        Register
-                                    </button>
-                                </li>
-                            </ul>
-                        </nav>
+                            <!--Запилили менюшку-->
+                            <div class="headermenu">
+                            <nav class="header__nav">
+                                <ul class="header__list">
+                                        <li class="header__item">
+                                            <a href="#" class="header__link">How it works</a>
+                                        </li>
+                                        <li class="header__item">   
+                                            <a href="#!" class="header__link">Pressroom</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="#!" class="header__link">Team</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="#!" class="header__link">FAQ</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="#!" class="header__link">Contact</a>
+                                        </li>
+                                </ul>
+                            </nav>  
+                        </div>                                
+                            <div class="headersignup">
+                                <nav class="header__nav-signup">
+                                    <ul class="header__list">
+                                        <li class="header__item">
+                                            <a href="#!" class="header__link">Sign in</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <button type="submit" class="header_button">
+                                                Register
+                                            </button>
+                                        </li>
+                                   
+                                </ul>
+                            </nav>
+                         </div>
+                        
                     </div>
-
+                </div>
         </div>
     </header>
 <!--Запилил главный баннер-->
@@ -186,16 +200,19 @@
                 <h2 class="h2__title">
                     Contact us any time at
                 </h2> 
-                <img src="./img/svg/Contact_us.svg" alt="Bitbunch" class="contact_us">  
-                <div class="leftblock__contact">help@bitbunch.com</div>
-                
+                <div class="ContactUs">
+                    <img src="./img/svg/Contact_us.svg" alt="Bitbunch" class="contact_us">  
+                    <div class="leftblock__contact">help@bitbunch.com</div>
+                </div>
 
                 <h2 class="h2__title">
                     Use our support line <br>Mo-Fr 9-18
                 </h2> 
-                <img src="./img/svg/Support_line.svg" alt="Bitbunch" class="support">
-                <div class="leftblock__suport">
-                + 44 7911 257986
+                <div class="Support">
+                    <img src="./img/svg/Support_line.svg" alt="Bitbunch" class="support">
+                    <div class="leftblock__contact">
+                    + 44 7911 257986
+                    </div>
                 </div>
                 <h2 class="h2__title">
                     You can also
@@ -215,17 +232,17 @@
         <div class="footer__item">
             <div class="footer__support">
                 <h2 class="footer__title1">
-                    Support
+                    <a href="#" class="title__link">Support</a>
                 </h2>
                 <ul class="support">
-                    <li>hello@bitbunch.co</li>
-                    <li>+44 7911 257986</li>
+                    <li class="footer_links-item">hello@bitbunch.co</li>
+                    <li class="footer_links-item">+44 7911 257986</li>
                     <li><img src="./img/svg/Mo-Fr 9-18.svg" alt=""></li>
                 </ul>
             </div>
             <div class="footer__ourproduct">
-                <h2 class="footer__titile">
-                    Our product
+                <h2 class="footer__title">
+                    <a href="#" class="title__link">Our product</a>
                 </h2>
                 <ul class="footer__links">
                     <li><a href="#" class="header__link">How it works</a></li>
@@ -236,7 +253,7 @@
             </div>
             <div class="footer__company">
                 <h2 class="footer__title">
-                    Company
+                    <a href="#" class="title__link">Company</a>
                 </h2>
                 <ul class="footer__links">
                     <li><a href="#" class="header__link">Pressroom</a></li>
@@ -247,7 +264,7 @@
             </div>
             <div class="footer__legal">
                 <h2 class="footer__title">
-                    Legal
+                    <a href="#" class="title__link">Legal</a>
                 </h2>
                 <ul class="legal">
                     <li><a href="#" class="header__link">Terms & Conditions</a></li>
@@ -257,16 +274,16 @@
                 </ul>
             </div>
             <div class="footer__e-mail">
-                © 2018 Bitbunch | All rights reserved
+                <div class="email">© 2018 Bitbunch | All rights reserved</div>            
             </div>
             <div class="footer__logo">
                 <img src="./img/svg/footer_ico.svg" alt="" class="imgfooter">
             </div>
             <div class="footer__social">
                 <ul class="footer__social-list">
-                    <Li class="social__item"><img src="./img/svg/google-plus.svg" alt="" class="img"></Li>
+                    <Li class="social__item"><img src="./img/svg/google-plus.svg" alt="" class="img" ></Li>
                     <Li class="social__item"><img src="./img/svg/instagram.svg" alt="" class="img"></Li>
-                    <Li class="social__item"><img src="./img/svg/instagram.svg" alt="" class="img"></Li>
+                    <Li class="social__item"><img src="./img/svg/facebook.svg" alt="" class="img"></Li>
                     <Li class="social__item"><img src="./img/svg/linkedin.svg" alt="" class="img"></Li>
                 </ul>
             </div>
