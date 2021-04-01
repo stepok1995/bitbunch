@@ -79,6 +79,92 @@
                     <button type="submit" class="intro_button">
                         Contact support
                     </button> 
+                    <div class="popup__overlay hidden">
+                        <form name='support' onSubmit="return formValidation();" class="order-form ">
+                                <!--Содержимое формы-->
+                                <section class="intro__form">
+                                    <div class="wraper__form">
+                                        <div class="gridWraperForm">
+                                            <div class="icon__form">
+                                                <img src="./img/svg/icon_form.svg" alt="Bitbunch">
+                                            </div>
+                                            <div class="title_form">
+                                                <h3 class="form__text-title">
+                                                    Create a ticket for our support team 
+                                                </h3>
+                                                <p class="form_text-text">
+                                                    We'll respond as soon as posssible
+                                                </p>
+                                            </div>
+                                            <div class="close">
+                                                <img src="./img/svg/exit.svg">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="content__form">
+                                    <ul class="ul_form">
+                                        <li class="item__form">
+                                            <div id="Email-red_line"> 
+                                            <input class="form-input" id="email" placeholder="E-mail">
+                                            <p class="Email__novalid-invisible" id="Email__novalid">Поле должно быть заполнено!</p>
+                                            </div>
+                                        </li>
+                                        <li class="item__form">
+                                            <div id="Name-red_line"> 
+                                            <input class="form-input" id="name" placeholder="Your name">
+                                            <p class="Name__novalid-invisible" id="Name__novalid">Поле должно быть заполнено!</p>
+                                            </div>
+                                        </li>
+                                        <li class="item__form">
+                                            <div id="Describe-red_line"> 
+                                            <input class="form-input" id="text" placeholder="Describe your issue">
+                                            <p class="Describe__novalid-invisible" id="Describe__novalid">Поле должно быть заполнено!</p>
+                                            </div>
+                                        </li>
+                                        <li class="item__form">
+                                            <button type="submit" class="form__button">Submit</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                          
+ <!--Конец содержимого формы-->                     
+                        </form>
+                      </div>
+                      <!--Вторая форма-->
+                      <div class="popup__overlay-second hidden-second">
+                        <form name='thanks' onSubmit="return formThanks();" class="order-form">
+                                <section class="intro__form">
+                                    <div class="wraper__form">
+                                        <div class="headFormSecond">
+                                            <div class="icon__form-second">
+                                                <img src="./img/svg/second-form-logo.svg" alt="Bitbunch">
+                                            </div>
+                                            <div class="title_form-second">
+                                                <h3 class="form__text-title">
+                                                    Thank you <span id="user_name"></span>! Your ticket was sent 
+                                                </h3>
+                                                <p class="form_text-text">
+                                                    We will email you back shortly
+                                                </p>
+                                            </div>
+                                           
+                                            
+                                        </div> 
+                                        <div class="close-second">
+                                                <img src="./img/svg/exit.svg">
+                                            </div>
+                                    </div>
+                                </section>
+                                <div class="content__form">
+                                    <button type="submit" class="form__button">Close</button>
+                                </div>                                          
+                        </form>
+                      </div>
+                      <!--Конец второй формы-->
                 </div>
                     <div class="gridRightItem">
                     <img src="/img/svg/Rct2.svg" alt="" class="rectangle2" id="rectangle2">
@@ -211,7 +297,7 @@
             
             </div>
         </section>
-        <!--Блок с вызовом формы-->
+        <!--Блок находится слева-->
         <section class="leftblock">
             <div class="leftblock__wraper">
                 <div class="leftblock__text">
@@ -241,10 +327,9 @@
                     You can also
                 </h2> 
 
-                <button type="submit" class="intro_button">
+                <a href="#" class="intro_button">
                     Create a new ticket
-                </button>
-            
+                </a>
             </div>
         </section>
     </section>
