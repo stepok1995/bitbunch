@@ -10,6 +10,9 @@
 <body>
     <header class="header">
         <div class="wraper">
+            <div class="burger">
+                <img src="./img/svg/Mobile/Burger.svg" alt="">
+            </div>
            <div class="gridHeader">
                     <div class="headerlogo">
                     <div class="header__wraper">
@@ -41,6 +44,16 @@
                                         <li class="header__item">
                                             <a href="#!" class="header__link">Contact</a>
                                         </li>
+                                        <li class="header__item language">
+                                            <img src="./img/svg/Mobile/English.svg" alt="">
+                                            <a href="#!" class="header__link">Eng</a>
+                                        </li>
+                                        <li class="header__item header__nav-close">
+                                            <img src="./img/svg/Mobile/Esc.svg" alt="">
+                                        </li>
+                                    <li class="header__item gray__line">
+
+                                    </li>  
                                 </ul>
                             </nav>  
                         </div>                                
@@ -48,21 +61,22 @@
                                 <nav class="header__nav-signup">
                                     <ul class="header__list">
                                         <li class="header__item">
-                                            <a href="#!" class="header__link">Sign in</a>
+                                            <a href="#!" class="header__link on_burger">Sign in</a>
+                                            <button type="submit" class="signin_button">
+                                                Sign in
+                                            </button>
                                         </li>
-                                        <li class="header__item">
+                                      
+                                        <li class="header__item register__button">
                                             <button type="submit" class="header_button">
                                                 Register
                                             </button>
                                         </li>
-                                   
-                                </ul>
+                                    </ul>
                             </nav>
-                         </div>
-                        
+                         </div>           
                     </div>
                 </div>
-        </div>
     </header>
 <!--Запилил главный баннер-->
 <main class="main">
@@ -139,34 +153,63 @@
                         <form name='thanks' onSubmit="return formThanks();" class="order-form">
                                 <section class="intro__form">
                                     <div class="wraper__form">
-                                        <div class="headFormSecond">
-                                            <div class="icon__form-second">
+                                        <div class="GridSecondForm">
+                                            <div class="grid__icon-second">
                                                 <img src="./img/svg/second-form-logo.svg" alt="Bitbunch">
                                             </div>
-                                            <div class="title_form-second">
-                                                <h3 class="form__text-title">
+                                                <h3 class="grid-title__form-second">
                                                     Thank you <span id="user_name"></span>! Your ticket was sent 
                                                 </h3>
-                                                <p class="form_text-text">
+                                                <p class="grid-smalltext__form-second">
                                                     We will email you back shortly
                                                 </p>
+                                                <div class="grid-close__form-second">
+                                                    <img src="./img/svg/exit.svg">
                                             </div>
-                                           
-                                            
                                         </div> 
-                                        <div class="close-second">
-                                                <img src="./img/svg/exit.svg">
-                                            </div>
+
                                     </div>
                                 </section>
-                                <div class="content__form">
-                                    <button type="submit" class="form__button">Close</button>
+                                <div class="GridContent__form">
+                                    <p class="grid-text__form-second">
+                                        In the meantime check out our blog for some great tips and trics
+                                    </p>
+
+                                       
+                                        <figure class="figure__image1">
+                                              <img src="./img/image1_second-form.jpg" alt="Welcome in new Bitbunch office" class="item-img_form-second">
+                                              <figcaption class="item-title__img-form-second">
+                                                Welcome in new <br/>
+                                                Bitbunch office
+                                              </figcaption>
+                                        </figure>
+                                        <figure class="figure__image2">
+                                             <img src="./img/image2_second-form.jpg" alt="Kenya Hoi joined Bitbunch" class="item-img_form-second">
+                                             <figcaption class="item-title__img-form-second">
+                                                Kenya Hoi <br/> joined Bitbunch 
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="figure__image3">
+                                            <img src="./img/image3_second-form.jpg" alt="Is there a spy on your desk?" class="item-img_form-second">
+                                            <figcaption class="item-title__img-form-second">
+                                                Is there a spy <br/> on your desk?
+                                            </figcaption>
+                                        </figure >
+                                        <figure class="figure__image4">
+                                            <img src="./img/image4_second-form.jpg" alt="Blockchain AR Summit 2018" class="item-img_form-second">
+                                            <figcaption class="item-title__img-form-second">
+                                                Blockchain <br/> AR Summit 2018 
+                                            </figcaption>
+                                        </figure>  
+                                       
+                                    <button type="submit" class="grid-form__button">Close</button>
                                 </div>                                          
                         </form>
                       </div>
                       <!--Конец второй формы-->
                 </div>
                     <div class="gridRightItem">
+                    <div class="RectangleAnimation">
                     <img src="/img/svg/Rct2.svg" alt="" class="rectangle2" id="rectangle2">
                     <img src="/img/svg/Rct1.svg" alt="" class="rectangle1" id="rectangle1">
                      <img src="/img/svg/Rct4.svg" alt="" class="rectangle4" id="rectangle4">
@@ -183,6 +226,7 @@
                      <img src="/img/svg/Rectangle/small/14.svg" alt="" class="rectangle14" id="rectangle14">
                      <img src="/img/svg/Rectangle/small/15.svg" alt="" class="rectangle15" id="rectangle15">
                      <img src="/img/svg/Rectangle/small/16.svg" alt="" class="rectangle16" id="rectangle16">
+                    </div>
                     </div>
             </div>
         </div>
@@ -327,9 +371,9 @@
                     You can also
                 </h2> 
 
-                <a href="#" class="intro_button">
+                <button type="submit" class="intro_button">
                     Create a new ticket
-                </a>
+                </button>
             </div>
         </section>
     </section>
@@ -353,10 +397,10 @@
                     <a href="#" class="title__link">Our product</a>
                 </h2>
                 <ul class="footer__links">
-                    <li><a href="#" class="header__link">How it works</a></li>
-                    <li><a href="#" class="header__link">About us</a></li>
-                    <li><a href="#" class="header__link">Support</a></li>
-                    <li><a href="#" class="header__link">F.A.Q.</a></li>
+                    <li><a href="#" class="footer__link">How it works</a></li>
+                    <li><a href="#" class="footer__link">About us</a></li>
+                    <li><a href="#" class="footer__link">Support</a></li>
+                    <li><a href="#" class="footer__link">F.A.Q.</a></li>
                 </ul>
             </div>
             <div class="footer__company">
@@ -364,10 +408,10 @@
                     <a href="#" class="title__link">Company</a>
                 </h2>
                 <ul class="footer__links">
-                    <li><a href="#" class="header__link">Pressroom</a></li>
-                    <li><a href="#" class="header__link">Contact</a></li>
-                    <li><a href="#" class="header__link">Career</a></li>
-                    <li><a href="#" class="header__link">Team</a></li>
+                    <li><a href="#" class="footer__link">Pressroom</a></li>
+                    <li><a href="#" class="footer__link">Contact</a></li>
+                    <li><a href="#" class="footer__link">Career</a></li>
+                    <li><a href="#" class="footer__link">Team</a></li>
                 </ul>
             </div>
             <div class="footer__legal">
@@ -375,10 +419,10 @@
                     <a href="#" class="title__link">Legal</a>
                 </h2>
                 <ul class="legal">
-                    <li><a href="#" class="header__link">Terms & Conditions</a></li>
-                    <li><a href="#" class="header__link">Privacy Policy</a></li>
-                    <li><a href="#" class="header__link">Imprint</a></li>
-                    <li><a href="#" class="header__link">GDPR</a></li>
+                    <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer__link">Imprint</a></li>
+                    <li><a href="#" class="footer__link">GDPR</a></li>
                 </ul>
             </div>
             <div class="footer__e-mail">
